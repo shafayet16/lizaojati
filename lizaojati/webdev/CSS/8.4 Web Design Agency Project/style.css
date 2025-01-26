@@ -41,7 +41,7 @@ body {
   margin-right: 50px;
   height: 200px;
 }
-@media (max-width: 600px) {
+@media (max-width: 601px) {
   body {
     background-color: pink;
   }

@@ -43,8 +43,7 @@ body {
 }
 @media (max-width: 600px) {
   body {
-    background-color: deeppink;
-    size: 50vh;
+    background-color: pink;
   }
   .card {
     display: block;

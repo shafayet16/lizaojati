@@ -53,3 +53,7 @@ p {
 h1 {
   font-size: 40px;
 }
+#main {
+  width: 50%;
+  border: 1px solid black;
+}

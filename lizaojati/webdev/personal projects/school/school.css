@@ -1,37 +1,50 @@
 /* styles.css */
+/* styles.css */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #333;
+  background: #2c3e50; /* Dark blue */
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #3498db; /* Light blue */
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3498db; /* Light blue */
 }
 
 .hero {
@@ -43,75 +56,141 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgba(44, 62, 80, 0.7); /* Dark blue overlay */
+  background-blend-mode: overlay;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  color: #ecf0f1; /* Light gray */
 }
 
 .hero .btn {
-  background: #ff5733;
+  background: #3498db; /* Light blue */
   color: #fff;
   padding: 0.75rem 2rem;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #2980b9; /* Darker blue */
 }
 
 .about,
 .courses,
 .contact {
-  padding: 2rem;
+  padding: 4rem 2rem;
   text-align: center;
+}
+
+.about h2,
+.courses h2,
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50; /* Dark blue */
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .course-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .course-item {
-  background: #f4f4f4;
-  padding: 1rem;
+  background: #fff;
+  padding: 1.5rem;
   margin: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-item h3 {
+  font-size: 1.5rem;
+  color: #2c3e50; /* Dark blue */
+  margin-bottom: 0.5rem;
+}
+
+.course-item p {
+  font-size: 1rem;
+  color: #777;
 }
 
 .contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact form input,
 .contact form textarea {
-  width: 50%;
-  padding: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
   margin: 0.5rem 0;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  border-color: #3498db; /* Light blue */
+  outline: none;
 }
 
 .contact form button {
-  background: #333;
+  background: #3498db; /* Light blue */
   color: #fff;
   padding: 0.75rem 2rem;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+  background: #2980b9; /* Darker blue */
 }
 
 footer {
-  background: #333;
+  background: #2c3e50; /* Dark blue */
   color: #fff;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
 }

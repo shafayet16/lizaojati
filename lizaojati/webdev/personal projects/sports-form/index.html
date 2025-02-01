@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sports form</title>
+    <title>Sports Form</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,14 +16,16 @@
     <header>
       <nav>
         <h3 class="left">2025 SPORTS FORM</h3>
-        <h5 class="right"><a href="football">Football</a></h5>
-        <h5 class="right"><a href="cricket">Cricket</a></h5>
-        <h5 class="right"><a href="marathon" id="margin">Marathon</a></h5>
+        <div class="right">
+          <a href="#football">Football</a>
+          <a href="#cricket">Cricket</a>
+          <a href="#marathon" id="margin">Marathon</a>
+        </div>
       </nav>
     </header>
     <main>
       <section id="greetings">
-        <h1>GREETINGS FELLOW ATHLETE</h1>
+        <h1>Greetings Fellow Athlete</h1>
         <p>
           We’re thrilled you’re joining us for an exciting season of
           athleticism! Whether you’re a seasoned pro or just starting out, this
@@ -32,10 +34,10 @@
           form below to secure your spot. Let’s make this season unforgettable!
         </p>
       </section>
-      <form action="">
+      <form>
         <div id="name-location">
-          <label for="name">what's your name?</label>
-          <input id="name" type="text" />
+          <label for="name">What's your name?</label>
+          <input id="name" type="text" required />
         </div>
         <div id="physical-info"></div>
         <div id="ambition"></div>

@@ -78,4 +78,4 @@ tip_percentage = float(input("What percentage of tip would you like to give?\n")
 split = int(input("How many people will split the bill?\n"))
 tip = round((total_bill * tip_percentage / 100 + total_bill) / split,2)
 print(f"Each person should pay: {tip}")
-#congo broksi you actually cooked it,make these two a big project using html,css and js or python and put it in your portfolio
+#congo broksi you actually cooked it,make these two a big project using html,css and js or python and put it in your portfolio.

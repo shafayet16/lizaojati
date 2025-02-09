@@ -1,4 +1,4 @@
-# wowie we made it to day 2(data types,numbers,type conversions,operations,f-strings)
+'''# wowie we made it to day 2(data types,numbers,type conversions,operations,f-strings)
 #integers-----------------
 #we can select a character of a string by using [] and putting in the index of the char we want as arg, this is also called subscripting
 print("hello"[4])
@@ -78,4 +78,15 @@ tip_percentage = float(input("What percentage of tip would you like to give?\n")
 split = int(input("How many people will split the bill?\n"))
 tip = round((total_bill * tip_percentage / 100 + total_bill) / split,2)
 print(f"Each person should pay: {tip}")
-#congo broksi you actually cooked it,make these two a big project using html,css and js or python and put it in your portfolio.
+#congo broksi you actually cooked it,make these two a big project using html,css and js or python and put it in your portfolio.'''
+#tip calculator rehearse
+greetings = print("Greetings this is my tip calculator")
+total_bill = float(input("What's the total bill?\n"))
+people = int(input("How many people will split the bill?\n"))
+tip = float(input("What percentage of tip would you like to give?\n"))
+tip_percentage = tip / 100
+total_tip = total_bill * tip_percentage
+total_bill += total_tip
+bill_per_person = total_bill / people
+final_amount = round(bill_per_person,2)
+print(f"Each person should pay: {final_amount}")

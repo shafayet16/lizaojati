@@ -66,5 +66,5 @@ for i in range(1,rand_letter_length + 1):
 for i in range(1,rand_symbol_length + 1):
     rand_symbols = random.choice(symbol)
     password += rand_symbols
-print(password)#superman
+print(password)#supermann
 '''

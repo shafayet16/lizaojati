@@ -1,1 +1,2 @@
-let name = shafayet;
+let name = "shafayet";
+let aim = "programmer";
